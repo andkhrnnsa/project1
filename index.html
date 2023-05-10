@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- theme meta -->
+    <meta name="theme-name" content="focus" />
+    <title>LMS - Dashboard</title>
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+    <!-- Styles -->
+    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lib/themify-icons.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/lib/weather-icons.css" rel="stylesheet" />
+    <link href="css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <div class="logo"><a href="index.html">
+                            <!-- <img src="images/logo.png" alt="" /> --><span>Focus</span></a></div>
+                    <li class="label">Home</li>
+                    <li><a href="index.html"><i class="ti-home"></i> Dashboard </a></li>
+
+                    <li class="label">Apps</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i> Akademik <span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="krs-pengisian.html">Pengisian KRS</a></li>
+                            <li><a href="krs-riwayat.html">Riwayat KRS</a></li>
+                            <li><a href="kurikulum.html">Kurikulum Mahasiswa</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="sidebar-sub-toggle"><i class="ti-bookmark-alt"></i>Hasil Studi<span
+                        class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="invoice.html">Nilai Mahasiswa</a></li>
+                            <li><a href="khs.html">KHS</a></li>
+                            <li><a href="transkip.html">Transkip Nilai</a></li>
+                            <li><a href="mengulang.html">Mengulang</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="kalender.html"><i class="ti-calendar"></i> Kalender Akademik </a></li>
+                    
+                    <li><a href="profile.html"><i class="ti-user"></i> Profile</a></li>
+                    
+                   
+                    <li class="label">Lain - Lain</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-files"></i>Keuangan<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="invoice.html">Tagihan</a></li>
+                            <li><a href="invoice-riwayat.html">Riwayat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href ="page-login.html"><i class="ti-close"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <i class="ti-bell"></i>
+                                <div class="drop-down dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-heading">
+                                        <span class="text-left">Recent Notifications</span>
+                                    </div>
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Mr. John</div>
+                                                        <div class="notification-text">5 members joined today </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Mariam</div>
+                                                        <div class="notification-text">likes a photo of you</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Tasnim</div>
+                                                        <div class="notification-text">Hi Teddy, Just wanted to let you
+                                                            ...</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Mr. John</div>
+                                                        <div class="notification-text">Hi Teddy, Just wanted to let you
+                                                            ...</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="text-center">
+                                                <a href="#" class="more-link">See All</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <span class="user-avatar">Lee Jeno
+                                    <i class="ti-angle-down f-s-10"></i>
+                                </span>
+                                <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-heading">
+                                        <span class="text-left">Focus</span>
+                                    </div>
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-user"></i>
+                                                    <span>Profile</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-power-off"></i>
+                                                    <span>Logout</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 p-r-0 title-margin-right">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <h1>Hello, <span>Lee</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4 p-l-0 title-margin-left">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item active">Dashboard</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+                <!-- /# row -->
+                <section id="main-content">
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="card">
+                                <div class="card-body" >
+                                    <div class="table-responsive">
+                                        <table class="table table-borderless">
+                                            <tbody>
+                                                <tr>
+                                                    <td><b>Nim</b></td>
+                                                    <td> :  2020230050</td>
+                                                    <td><b>Nama Mahasiswa</b></td>
+                                                    <td><div class="text-left"> :  Lee Jeno</div></td>
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <td><b>Status Mahasiswa</b></td>
+                                                    <td> :  Aktif</td>
+                                                    <td><b>Program Studi</b></td>
+                                                    <td><div class="text-left"> :  Teknologi Informasi</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>Angkatan</b></td>
+                                                    <td> :  2020</td>
+                                                    <td><b>Pembimbing Akademik</b></td>
+                                                    <td><div class="text-left"> :  Lee Soo Man</div></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b>SKS Lulus</b></td>
+                                                    <td> :  105</td>
+                                                    <td><b>IPK</b></td>
+                                                    <td><div class="text-left"> :  3.82</div> </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <!-- /# card -->
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-title">
+                                    <h4>Tagihan</h4>
+                                </div>
+                          
+                                <div class="card-body" >
+                                    <p>SKS Semester 6</p>
+                                    <h3>Rp2.700.000</h3>
+                                    <p>Batas Pembayaran<b> 20 Juni 2023</b></p>
+                                    <a href="invoice.html"><button type="button" class="btn btn-primary btn-block m-b-10">Bayar Tagihan</button></a>
+                                </div>
+                            </div>
+                        
+                            <!-- /# card -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card card-danger">
+                                <div class="card-title">
+                                    <h4>Jadwal Kuliah</h4>
+                                </div><br>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover ">
+                                            <thead>
+                                                <tr>
+                                                    <th>Hari</th>
+                                                    <th>Waktu</th>
+                                                    <th>Mata Kuliah</th>
+                                                    <th>Nama Dosen</th>
+                                                    <th>Ruangan</th>
+                                                    <th>Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody border="0">
+                                                <tr>
+                                                    <th scope="row">Senin</th>
+                                                    <td>08.00 - 10.30</td>
+                                                    <td>Teori Pemograman Visual</td>
+                                                    <td>Kim Mingyu</td>
+                                                    <td>T-401</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"></th>
+                                                    <td>13.30 - 14.30</td>
+                                                    <td>Praktikum Pemograman Visual</td>
+                                                    <td>Kim Mingyu</td>
+                                                    <td>T-401</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Selasa</th>
+                                                    <td>08.00 - 10.30</td>
+                                                    <td>Teori Mobile Computing</td>
+                                                    <td>Byun Baekhyun</td>
+                                                    <td>T-101</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"></th>
+                                                    <td>11.00 - 13.00</td>
+                                                    <td>Komputer dan Masyarakat</td>
+                                                    <td>Boo Seungkwan</td>
+                                                    <td>T-303</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Rabu</th>
+                                                    <td>11.00 - 13.00</td>
+                                                    <td>Interpersonal Skill</td>
+                                                    <td>Jung Jaehyun</td>
+                                                    <td>T-206</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Kamis</th>
+                                                    <td>08.00 - 8.45</td>
+                                                    <td>Praktikum Basis Data</td>
+                                                    <td>Jeon Wonwoo</td>
+                                                    <td>T-205</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"></th>
+                                                    <td>10.30 - 12.00</td>
+                                                    <td>Kewirausahaan</td>
+                                                    <td>Lee Taeyeong</td>
+                                                    <td>T-406</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">Jumat</th>
+                                                    <td>08.00 - 08.45</td>
+                                                    <td>Praktikum Mobile Computing</td>
+                                                    <td>Byun Baekhyun</td>
+                                                    <td>T-101</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row"></th>
+                                                    <td>11.00 - 13.30 </td>
+                                                    <td>Teori Basis Data</td>
+                                                    <td>Jeon Wonwoo</td>
+                                                    <td>T-205</td>
+                                                    <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-body p-b-0">
+                                    <h4 class="card-title">Jadwal Ujian</h4>
+                                    <br>
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs customtab2" role="tablist">
+                                        <li class="nav-item"> <a class="nav-link active show" data-toggle="tab" href="#home7" role="tab" aria-selected="true"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">UTS</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#profile7" role="tab" aria-selected="false"><span class="hidden-sm-up"></span> <span class="hidden-xs-down">UAS</span></a> </li>
+                                    </ul>
+                                    <!-- Tab panes -->
+                                    <div class="tab-content">
+                                        <div class="tab-pane  active p-20" id="home7" role="tabpanel">
+                                            <div class="table-responsive">
+                                            <table class="table table-hover ">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Hari Tanggal</th>
+                                                        <th>Waktu</th>
+                                                        <th>Mata Kuliah</th>
+                                                        <th>Nama Dosen</th>
+                                                        <th>Ruangan</th>
+                                                        <th>Details</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody border="0">
+                                                    <tr>
+                                                        <th scope="row">Senin, 8 Mei 2023</th>
+                                                        <td>08.00 - 10.30</td>
+                                                        <td>Teori Pemograman Visual</td>
+                                                        <td>Kim Mingyu</td>
+                                                        <td>T-401</td>
+                                                        <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa, 9 Mei 2023</th>
+                                                        <td>11.00 - 13.00</td>
+                                                        <td>Komputer dan Masyarakat</td>
+                                                        <td>Boo Seungkwan</td>
+                                                        <td>T-303</td>
+                                                        <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Rabu, 10 Mei 2023</th>
+                                                        <td>11.00 - 13.00</td>
+                                                        <td>Interpersonal Skill</td>
+                                                        <td>Jung Jaehyun</td>
+                                                        <td>T-206</td>
+                                                        <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Kamis, 11 Mei 2023</th>
+                                                        <td>10.30 - 12.00</td>
+                                                        <td>Kewirausahaan</td>
+                                                        <td>Lee Taeyeong</td>
+                                                        <td>T-406</td>
+                                                        <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Jumat, 12 Mei 2023</th>
+                                                        <td>11.00 - 13.30 </td>
+                                                        <td>Teori Basis Data</td>
+                                                        <td>Jeon Wonwoo</td>
+                                                        <td>T-205</td>
+                                                        <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">Selasa, 16 Mei 2023</th>
+                                                        <td>11.00 - 13.30 </td>
+                                                        <td>Teori Mobile Computing</td>
+                                                        <td>Byun Baekhyun</td>
+                                                        <td>T-101</td>
+                                                        <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane  p-20" id="profile7" role="tabpanel">
+
+                                            <div class="table-responsive">
+                                                <table class="table table-hover ">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Hari Tanggal</th>
+                                                            <th>Waktu</th>
+                                                            <th>Mata Kuliah</th>
+                                                            <th>Nama Dosen</th>
+                                                            <th>Ruangan</th>
+                                                            <th>Details</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody border="0">
+                                                        <tr>
+                                                            <th scope="row">Senin, 10 Juli 2023</th>
+                                                            <td>08.00 - 10.30</td>
+                                                            <td>Teori Pemograman Visual</td>
+                                                            <td>Kim Mingyu</td>
+                                                            <td>T-401</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Selasa, 11 Juli 2023</th>
+                                                            <td>11.00 - 13.00</td>
+                                                            <td>Komputer dan Masyarakat</td>
+                                                            <td>Boo Seungkwan</td>
+                                                            <td>T-303</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Rabu, 12 Juli 2023</th>
+                                                            <td>11.00 - 13.00</td>
+                                                            <td>Interpersonal Skill</td>
+                                                            <td>Jung Jaehyun</td>
+                                                            <td>T-206</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Kamis, 13 Juli 2023</th>
+                                                            <td>08.00 - 8.45</td>
+                                                            <td>Praktikum Basis Data</td>
+                                                            <td>Jeon Wonwoo</td>
+                                                            <td>T-205</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row"></th>
+                                                            <td>10.30 - 12.00</td>
+                                                            <td>Kewirausahaan</td>
+                                                            <td>Lee Taeyeong</td>
+                                                            <td>T-406</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Jumat, 14 Juli 2023</th>
+                                                            <td>08.00 - 08.45</td>
+                                                            <td>Praktikum Mobile Computing</td>
+                                                            <td>Byun Baekhyun</td>
+                                                            <td>T-101</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Senin, 17 Juli 2023</th>
+                                                            <td>13.30 - 14.30</td>
+                                                            <td>Praktikum Pemograman Visual</td>
+                                                            <td>Kim Mingyu</td>
+                                                            <td>T-401</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Selasa, 18 Juli 2023</th>
+                                                            <td>08.00 - 10.30</td>
+                                                            <td>Teori Mobile Computing</td>
+                                                            <td>Byun Baekhyun</td>
+                                                            <td>T-101</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">Jumat, 21 Juli 2023</th>
+                                                            <td>11.00 - 13.30</td>
+                                                            <td>Teori Basis Data</td>
+                                                            <td>Jeon Wonwoo</td>
+                                                            <td>T-201</td>
+                                                            <td><a href="details.html"><button type="button" class="btn btn-warning btn-sm m-b-10 ti-arrow-top-left"></button></a></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery vendor -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="js/lib/menubar/sidebar.js"></script>
+    <script src="js/lib/preloader/pace.min.js"></script>
+    <!-- sidebar -->
+
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- bootstrap -->
+
+    <script src="js/lib/calendar-2/moment.latest.min.js"></script>
+    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <script src="js/lib/calendar-2/pignose.init.js"></script>
+
+
+    <script src="js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="js/lib/weather/weather-init.js"></script>
+    <script src="js/lib/circle-progress/circle-progress.min.js"></script>
+    <script src="js/lib/circle-progress/circle-progress-init.js"></script>
+    <script src="js/lib/chartist/chartist.min.js"></script>
+    <script src="js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+    <script src="js/lib/sparklinechart/sparkline.init.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
+    <!-- scripit init-->
+    <script src="js/dashboard2.js"></script>
+</body>
+
+</html>

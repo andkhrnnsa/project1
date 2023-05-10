@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- theme meta -->
+    <meta name="theme-name" content="focus" />
+    <title>LMS - Transkip Nilai</title>
+    <!-- ================= Favicon ================== -->
+    <!-- Standard -->
+    
+    <!-- Retina iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
+    <!-- Retina iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="114x114" href="http://placehold.it/114.png/000/fff">
+    <!-- Standard iPad Touch Icon-->
+    <link rel="apple-touch-icon" sizes="72x72" href="http://placehold.it/72.png/000/fff">
+    <!-- Standard iPhone Touch Icon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="http://placehold.it/57.png/000/fff">
+    <!-- Styles -->
+    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
+    <link href="css/lib/chartist/chartist.min.css" rel="stylesheet">
+    <link href="css/lib/font-awesome.min.css" rel="stylesheet">
+    <link href="css/lib/themify-icons.css" rel="stylesheet">
+    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/lib/weather-icons.css" rel="stylesheet" />
+    <link href="css/lib/menubar/sidebar.css" rel="stylesheet">
+    <link href="css/lib/bootstrap.min.css" rel="stylesheet">
+    <link href="css/lib/helper.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="sidebar sidebar-hide-to-small sidebar-shrink sidebar-gestures">
+        <div class="nano">
+            <div class="nano-content">
+                <ul>
+                    <div class="logo"><a href="index.html">
+                            <!-- <img src="images/logo.png" alt="" /> --><span>Focus</span></a></div>
+                    <li class="label">Home</li>
+                    <li><a href="index.html"><i class="ti-home"></i> Dashboard </a></li>
+
+                    <li class="label">Apps</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-bar-chart-alt"></i> Akademik <span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="krs-pengisian.html">Pengisian KRS</a></li>
+                            <li><a href="krs-riwayat.html">Riwayat KRS</a></li>
+                            <li><a href="kurikulum.html">Kurikulum Mahasiswa</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="sidebar-sub-toggle"><i class="ti-bookmark-alt"></i>Hasil Studi<span
+                        class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="invoice.html">Nilai Mahasiswa</a></li>
+                            <li><a href="khs.html">KHS</a></li>
+                            <li><a href="transkip.html">Transkip Nilai</a></li>
+                            <li><a href="mengulang.html">Mengulang</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="kalender.html"><i class="ti-calendar"></i> Kalender Akademik </a></li>
+                    
+                    <li><a href="profile.html"><i class="ti-user"></i> Profile</a></li>
+                    
+                   
+                    <li class="label">Lain - Lain</li>
+                    <li><a class="sidebar-sub-toggle"><i class="ti-files"></i>Keuangan<span
+                                class="sidebar-collapse-icon ti-angle-down"></span></a>
+                        <ul>
+                            <li><a href="invoice.html">Tagihan</a></li>
+                            <li><a href="invoice-riwayat.html">Riwayat</a></li>
+                        </ul>
+                    </li>
+                    <li><a href ="page-login.html"><i class="ti-close"></i> Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /# sidebar -->
+
+    <div class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="float-left">
+                        <div class="hamburger sidebar-toggle">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="float-right">
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <i class="ti-bell"></i>
+                                <div class="drop-down dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-heading">
+                                        <span class="text-left">Recent Notifications</span>
+                                    </div>
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Mr. John</div>
+                                                        <div class="notification-text">5 members joined today </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Mariam</div>
+                                                        <div class="notification-text">likes a photo of you</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Tasnim</div>
+                                                        <div class="notification-text">Hi Teddy, Just wanted to let you
+                                                            ...</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <img class="pull-left m-r-10 avatar-img"
+                                                        src="images/avatar/3.jpg" alt="" />
+                                                    <div class="notification-content">
+                                                        <small class="notification-timestamp pull-right">02:34
+                                                            PM</small>
+                                                        <div class="notification-heading">Mr. John</div>
+                                                        <div class="notification-text">Hi Teddy, Just wanted to let you
+                                                            ...</div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                            <li class="text-center">
+                                                <a href="#" class="more-link">See All</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown dib">
+                            <div class="header-icon" data-toggle="dropdown">
+                                <span class="user-avatar">Lee Jeno
+                                    <i class="ti-angle-down f-s-10"></i>
+                                </span>
+                                <div class="drop-down dropdown-profile dropdown-menu dropdown-menu-right">
+                                    <div class="dropdown-content-heading">
+                                        <span class="text-left">Focus</span>
+                                    </div>
+                                    <div class="dropdown-content-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-user"></i>
+                                                    <span>Profile</span>
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a href="#">
+                                                    <i class="ti-power-off"></i>
+                                                    <span>Logout</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrap">
+        <div class="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8 p-r-0 title-margin-right">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <h1>Hello, <span>Lee</span></h1>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                    <div class="col-lg-4 p-l-0 title-margin-left">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Hasil Studi</a></li>
+                                    <li class="breadcrumb-item active">Transkip Nilai</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /# column -->
+                </div>
+                <!-- /# row -->
+                <section id="main-content">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-bordered">
+                                            <thead class="table-primary">
+                                                <tr>
+                                                    <th style="text-align: center;" >No</th>
+                                                    <th style="text-align: center;">Mata Kuliah</th>
+                                                    <th style="text-align: center;">SMT</th>
+                                                    <th style="text-align: center;">SKS</th>
+                                                    <th style="text-align: center;">Nilai</th>
+                                                    <th style="text-align: center;">Grade</th>
+                                                    <th style="text-align: center;">Keterangan</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td>Bahasa Indonesia</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td>Bahasa Inggris I</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td>Fisika Listrik Magnet dan Gelombang</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td>Aljabar Linier</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td>Pengantar Teknologi Informasi</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">6</td>
+                                                    <td>Algoritma dan Pemograman</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">7</td>
+                                                    <td>Praktikum Algoritma dan Pemograman</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">8</td>
+                                                    <td>Pemograman Berbasi Web</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">9</td>
+                                                    <td>Kalkulus</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">10</td>
+                                                    <td>Pendidikan Pancasila</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">11</td>
+                                                    <td>Bahasa Inggris II</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">12</td>
+                                                    <td>Matematika Diskrit</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3,30</td>
+                                                    <td style="text-align: center;">B+</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">13</td>
+                                                    <td>Pengembangan Aplikasi Game</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">14</td>
+                                                    <td>Arsitektur dan Organisasi Komputer</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3,00</td>
+                                                    <td style="text-align: center;">B</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">15</td>
+                                                    <td>Struktur Data</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,30</td>
+                                                    <td style="text-align: center;">B+</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">16</td>
+                                                    <td>Praktikum Struktur Data</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">3,00</td>
+                                                    <td style="text-align: center;">B</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">17</td>
+                                                    <td>Basis Data</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,30</td>
+                                                    <td style="text-align: center;">B+</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">18</td>
+                                                    <td>Praktikum Basis Data</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">2,70</td>
+                                                    <td style="text-align: center;">B-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">19</td>
+                                                    <td>Statistika</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">20</td>
+                                                    <td>Bahasa Jepang I</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">21</td>
+                                                    <td>Pendidikan Kewarganegaraan</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">22 </td>
+                                                    <td>Teknik Multimedia</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">23 </td>
+                                                    <td>Praktikum Teknik Multimedia</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">24 </td>
+                                                    <td>Analisa Design Berorientasi Objek</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">25</td>
+                                                    <td>Praktikum Analisa Design Berorientasi Objek</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">26</td>
+                                                    <td>Sistem Operasi</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">27 </td>
+                                                    <td>Praktikum Sistem Operasi</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">28</td>
+                                                    <td>Rekayasa Perangkat Lunak</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3,30</td>
+                                                    <td style="text-align: center;">B+</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">29</td>
+                                                    <td>Logika Informatika</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">30</td>
+                                                    <td>Monozukuri</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">31</td>
+                                                    <td>Bahasa Jepang II</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">32</td>
+                                                    <td>Mikroprosesor Bahasa dan Rakitan</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3,30</td>
+                                                    <td style="text-align: center;">B+</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">33</td>
+                                                    <td>Praktikum Mikroprosesor Bahasa dan Rakitan</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">34</td>
+                                                    <td>Sistem Informasi Enterprise</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">35</td>
+                                                    <td>Interaksi Manusia dan Komputer</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">36</td>
+                                                    <td>Pemograman Internet</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">37</td>
+                                                    <td>Praktikum Pemograman Internet</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">38</td>
+                                                    <td>Teori Bahasa dan Automata</td>
+                                                    <td style="text-align: center;">4</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">39</td>
+                                                    <td>Pendidikan Agama Islam</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">40</td>
+                                                    <td>Metodelogi Penelitian</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">41</td>
+                                                    <td>Metode Numerik</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">42</td>
+                                                    <td>Pemograman Berorientasi Objek</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">43</td>
+                                                    <td>Praktikum Pemograman Berorientasi Objek</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">44</td>
+                                                    <td>Analisa dan Desain Enterprise</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">3,00</td>
+                                                    <td style="text-align: center;">B</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">45</td>
+                                                    <td>Jaringan Komputer I</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">46</td>
+                                                    <td>Praktikum Jaringan Komputer I</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">47</td>
+                                                    <td>Pemograman Visual</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">48</td>
+                                                    <td>Praktikum Pemograman Visual</td>
+                                                    <td style="text-align: center;">5</td>
+                                                    <td style="text-align: center;">1</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">49</td>
+                                                    <td>Intelegensi Buatan</td>
+                                                    <td style="text-align: center;">6</td>
+                                                    <td style="text-align: center;">3</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">50</td>
+                                                    <td>Etika Rekayasa</td>
+                                                    <td style="text-align: center;">7</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">4,00</td>
+                                                    <td style="text-align: center;">A</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="text-align: center;">51</td>
+                                                    <td>Riset Teknologi Informasi</td>
+                                                    <td style="text-align: center;">7</td>
+                                                    <td style="text-align: center;">2</td>
+                                                    <td style="text-align: center;">3,70</td>
+                                                    <td style="text-align: center;">A-</td>
+                                                    <td style="text-align: center;">Lulus</td>
+                                                </tr>
+                                                <tfoot>
+                                                    <tr>
+                                                        <th style="text-align: center;" colspan="3" >Total</th>
+                                                        <th style="text-align: center;">105</th>
+                                                        <th style="text-align: center;"></th>
+                                                        <th style="text-align: center;"></th>
+                                                        <th style="text-align: center;"></th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th style="text-align: center;" colspan="4" >Indeks Prestasi Kumulatif</th>
+                                                        <th style="text-align: center;">3,79</th>
+                                                        <th style="text-align: center;"></th>
+                                                        <th style="text-align: center;"></th>
+                                                    </tr>
+                                                </tfoot>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery vendor -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/jquery.nanoscroller.min.js"></script>
+    <!-- nano scroller -->
+    <script src="js/lib/menubar/sidebar.js"></script>
+    <script src="js/lib/preloader/pace.min.js"></script>
+    <!-- sidebar -->
+
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- bootstrap -->
+
+    <script src="js/lib/calendar-2/moment.latest.min.js"></script>
+    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
+    <script src="js/lib/calendar-2/pignose.init.js"></script>
+
+
+    <script src="js/lib/weather/jquery.simpleWeather.min.js"></script>
+    <script src="js/lib/weather/weather-init.js"></script>
+    <script src="js/lib/circle-progress/circle-progress.min.js"></script>
+    <script src="js/lib/circle-progress/circle-progress-init.js"></script>
+    <script src="js/lib/chartist/chartist.min.js"></script>
+    <script src="js/lib/sparklinechart/jquery.sparkline.min.js"></script>
+    <script src="js/lib/sparklinechart/sparkline.init.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
+    <!-- scripit init-->
+    <script src="js/dashboard2.js"></script>
+</body>
+
+</html>
